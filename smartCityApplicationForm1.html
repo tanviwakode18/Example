@@ -1,0 +1,80 @@
+<template>
+    <lightning-card>
+        <div class="slds-align_absolute-center" style="height:1rem">
+            <div class="slds-text-heading_large">Welcome to the Smart City Suggestion Portal!</div>
+        </div>
+        <div class="slds-p-top_x-large">
+            <div class="slds-p-around_xxx-small">
+                <div class="slds-p-left_x-small">
+                    <div class="slds-p-left_medium">
+                        <p>Thank you for contributing to the development of a smarter, more sustainable, and vibrant
+                            city. The Smart City Suggestion Form is designed to collect meaningful and actionable ideas
+                            from citizens like you, aimed at improving various aspects of urban living. It is an
+                            innovative platform that empowers citizens to actively contribute ideas for transforming
+                            their city into a smarter, more sustainable, and inclusive environment.</p>
+                        <p>
+                            <br>
+                            This form begins by capturing essential personal details such as the applicant's name,
+                            contact information, address, and professional background, ensuring authenticity and
+                            enabling effective communication. It also gathers demographic information like language
+                            preferences and educational qualifications to enhance inclusivity.
+                            <br>
+                            <br>
+                            The core of the form focuses on the suggestion itself, requiring users to provide a concise
+                            title, select a relevant category (e.g., Public Parks, Roads, Infrastructure, Waste
+                            Management), and describe their idea in detail.
+                            <br>
+                            <br>
+                            Users specify the exact location for the improvement and outline how their suggestion could
+                            benefit the community, identifying potential beneficiaries such as residents, businesses, or
+                            tourists. Environmental benefits and unique impacts are also highlighted to ensure the idea
+                            aligns with sustainable development goals.
+                            <br>
+                            <br>
+                            The form includes sections to evaluate feasibility, resource requirements, and estimated
+                            costs while capturing community feedback and approval to assess support for the idea.
+                            Attachments, such as photos or supporting documents, can be added to provide additional
+                            context.
+                            <br>
+                            <br>
+                            By submitting this form, applicants actively participate in shaping the city’s future,
+                            fostering innovation and collaboration between the community and local government to address
+                            pressing urban challenges and enhance the quality of life for all.
+                            <br>
+                            <br>
+                            The purpose of the Smart City Suggestion Form is to provide a structured platform for
+                            citizens to share innovative ideas and actionable solutions to improve the quality of urban
+                            life.
+                            This form facilitates the collection of diverse suggestions aimed at enhancing public
+                            infrastructure, sustainability, safety, accessibility, and community engagement.
+                            <br>
+                            <br>
+                            By enabling residents to voice their insights, the form helps local authorities identify
+                            pressing urban challenges, gather valuable community feedback, and prioritize initiatives
+                            that align with the city’s development goals.
+                            <br>
+                            Ultimately, it fosters collaboration between citizens and the government, empowering the
+                            community to actively participate in shaping a smarter, more inclusive, and sustainable
+                            future for their city.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <!-----------------checkbox---------------------->
+            <br>
+            <lightning-input type="checkbox"
+                label="I have read and understood all the details provided regarding the housing application process."
+                name="agree" onchange={handleCheckboxChange} value={welcomeStep.isTermsAgreed} data-id="isTermsAgreed" required="true"></lightning-input>
+            <!---
+            <div class="slds-p-top_xx-small"></div>
+            <div class="slds-align_absolute-center" style="height:5rem">
+                <template if:true={isButtonVisible}>
+                    <lightning-button label="Apply" onclick={handleNext} class="slds-m-top_medium"></lightning-button>
+                </template>
+            </div>
+        -->
+        </div>
+        
+    </lightning-card>
+</template>
